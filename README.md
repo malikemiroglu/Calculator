@@ -1,5 +1,6 @@
 # Hesap Makinesi
 ![HESAPMAKINESI](./assets/img/screenshotCalc.png)
+---
 Javascript öğrenmeye başladığımda yaptığım basit bir hesap makinesi.Çalışmamda HTML5, CSS ve JavaScript kullandım.
 
 ## Özellikler
