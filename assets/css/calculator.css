@@ -1,0 +1,107 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    align-items: center;
+    background: linear-gradient(320deg, #a2c9d9, #97b2c1, #86a0a9);
+    height: inherit;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    flex-basis: 400px;
+    height: 540px;
+    padding: 20px 35px;
+}
+
+.screen {
+    backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    font-size: 35px;
+    overflow: auto;
+    padding: 20px;
+    text-align: right;
+    width: 326px;
+}
+
+.calcButtonRow {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+.calcButton {
+    backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);   
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    flex-basis: 20%;
+    font-size: 24px;
+    height: 65px;
+}
+
+.calcButton:last-child{
+    backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);   
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    background: #ff7f50;
+}
+
+.calcButton:last-child:hover {
+    background-color: inherit;
+    color: inherit;
+}
+
+.calcButton:hover {
+    background-color: inherit;
+}
+
+.calcButton:active {
+    background-color: #ffef78;
+}
+
+.double {
+    flex-basis: 47%;
+}
+
+.triple {
+    flex-basis: 73%;
+}
+
+@media (max-width:768px) {
+    .container {
+        width: 370px;
+        flex-basis: auto;
+        
+    }
+
+    .screen {
+        width: 100%;
+    }
+}
